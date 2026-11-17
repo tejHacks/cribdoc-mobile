@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "CribDoc",
+    "slug": "cribdoc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "cribdoc",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.olateju.cribdoc",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.olateju.cribdoc",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0F766E"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F766E",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "CribDoc uses the camera to take an eye photo for on-device screening.",
+          "photosPermission": "CribDoc lets you choose an existing eye photo to screen on-device."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
