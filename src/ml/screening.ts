@@ -5,7 +5,7 @@
  * model is bundled, `screenImage` rejects with `ModelUnavailableError` and the
  * UI says so plainly.
  *
- * To integrate (see LumiCare's pipeline for reference):
+ * To integrate:
  *   1. `npx expo install onnxruntime-react-native` and use a development build
  *      (Expo Go does not include ONNX Runtime).
  *   2. Bundle the model under assets/ml/ and load it with InferenceSession.create().

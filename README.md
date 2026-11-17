@@ -11,7 +11,7 @@
 ## The model (not bundled yet)
 
 `src/ml/screening.ts` is the integration point. It **never returns a simulated result** — until the ONNX model
-is added it throws `ModelUnavailableError` and the UI says so. To integrate, follow the LumiCare pipeline:
+is added it throws `ModelUnavailableError` and the UI says so. To integrate:
 `npx expo install onnxruntime-react-native`, bundle the model in `assets/ml/`, build a development client
 (Expo Go has no ONNX Runtime), then letterbox → infer → post-process.
 
