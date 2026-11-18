@@ -40,7 +40,15 @@
           "cameraPermission": "CribDoc uses the camera to take an eye photo for on-device screening.",
           "photosPermission": "CribDoc lets you choose an existing eye photo to screen on-device."
         }
-      ]
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#0F766E"
+        }
+      ],
+      "expo-sharing",
+      "./plugins/withCribDocModel"
     ],
     "experiments": {
       "typedRoutes": true,

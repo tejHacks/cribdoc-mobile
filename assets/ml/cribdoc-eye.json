@@ -1,0 +1,20 @@
+{
+  "name": "cribdoc-eye",
+  "version": "0.0.0",
+  "status": "untrained",
+  "notes": "Replace this file when the trained model lands. See ml/README.md for the contract the .onnx file must follow.",
+  "input": { "name": "images", "size": 640 },
+  "outputs": { "detections": "output0", "prototypes": "output1" },
+  "segmentation": {
+    "maxDetections": 300,
+    "valuesPerDetection": 38,
+    "maskCoefficients": 32,
+    "prototypeSize": 160,
+    "scleraClass": 1,
+    "minConfidence": 0.6
+  },
+  "calibration": {
+    "yellowIndexThreshold": null,
+    "minScleraPixels": 400
+  }
+}
